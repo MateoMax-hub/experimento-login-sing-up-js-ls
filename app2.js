@@ -1,7 +1,6 @@
 let nombre
 let contra
 
-
 function showlog() { 
     if (document.getElementById('formlog').style.display == 'flex') {
         document.getElementById('formlog').style.display = 'none'
@@ -9,9 +8,7 @@ function showlog() {
     else {
         document.getElementById('formlog').style.display = 'flex'
     }
-
 }
-
 
 function sub(event) {
     event.preventDefault()
@@ -35,5 +32,11 @@ function showprofile() {
     else {
         document.getElementById('profile').style.display = 'flex'
     }
+}
+
+function endlog() {
+    document.getElementById('profile').style.display = 'none'
+    document.getElementById('btnperfil').style.display = 'none'
+    document.getElementById('btnfunka').style.display = 'block'
 
 }

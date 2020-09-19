@@ -26,7 +26,7 @@
         </div>
         <div>
             <li>
-                <button onclick="showlog()" class="text-white bg-dark dis-none" id="btnfunka">funka pls
+                <button onclick="showlog()" class="text-white bg-dark dis-none" id="btnfunka">log in
                     
                 </button>
             </li>
@@ -39,9 +39,9 @@
     <div class="dis-none1 justify-content-end" id="formlog">
         <div class="bg-dark text-white w-20 d-flex justify-content-end">
             <form name="form" action="" method="get">
-                <h1>nombre</h1>
+                <h4>nombre</h1>
                 <input type="text" name="nombre">
-                <h2>contraseña</h2>
+                <h4>contraseña</h2>
                 <input type="password" name="contra">
                 <button onclick="sub(event)" id="">Prueba</button>
             </form>
@@ -63,7 +63,9 @@
                 proximamente
             </li>
             <li class="prox">
-                proximamente
+                <button class=" bg-dark text-white w-100 h-100" id="endsesion" onclick="endlog()">
+                    cerrar sesion
+                </button>
             </li>
         </ul>
     </div>
