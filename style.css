@@ -1,4 +1,7 @@
 
+body {
+    background-color: rgb(230, 230, 230);
+}
 .dis-none {
     display: none;
     width: 75px;
@@ -6,4 +9,13 @@
     background-color: rgb(38, 38, 39);
     border: 1px solid grey;
     color: white;
+}
+.w-10 {
+    width: 20%;
+}
+.dis-none1 {
+    display: none;
+}
+.h-30 {
+    height: 30px;
 }

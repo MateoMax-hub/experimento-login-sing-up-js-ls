@@ -15,15 +15,29 @@
 
 <body>
 
+    <ul class="nav d-flex justify-content-between bg-dark text-white h-30">
+        <li class="align-self-start">
+            link 1 prueba
+        </li>
+        <li>
+            <button onclick="showlog()" class="text-white bg-dark " id="btnfunka">funka pls
 
-    <form name="form" action="" method="get" id="formlog">
-        <h1>nombre</h1>
-        <input type="text" name="nombre">
-        <h2>contraseña</h2>
-        <input type="password" name="contra">
-        <button onclick="sub(event)" id="">Prueba</button>
-    </form>
+            </button>
+        </li>
+    </ul>
 
+
+    <div class="dis-none1 justify-content-end" id="formlog">
+        <div class="bg-dark text-white w-10 d-flex justify-content-end">
+            <form name="form" action="" method="get">
+                <h1>nombre</h1>
+                <input type="text" name="nombre">
+                <h2>contraseña</h2>
+                <input type="password" name="contra">
+                <button onclick="sub(event)" id="">Prueba</button>
+            </form>
+        </div>
+    </div>
     <button class="dis-none" id="btnperfil">
         <h4>perfil</h4>
     </button>

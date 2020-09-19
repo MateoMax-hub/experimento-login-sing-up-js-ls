@@ -1,35 +1,30 @@
 let nombre
 let contra
 
+
+function showlog() { 
+    if (document.getElementById('formlog').style.display == 'flex') {
+        document.getElementById('formlog').style.display = 'none'
+    }
+    else {
+        document.getElementById('formlog').style.display = 'flex'
+    }
+
+}
+
+
 function sub(event) {
     event.preventDefault()
     nombre = document.getElementsByName("nombre")[0].value
     contra = document.getElementsByName("contra")[0].value
 
     if (nombre == 'max' && contra == '123') {
-        document.getElementById('formlog').style.display = 'none'
-        document.getElementById('btnperfil').style.display = 'block'
-
+        document.getElementById('formlog').style.display = 'none';
+        document.getElementById('btnperfil').style.display = 'block';
+        console.log ("regato")
+        document.getElementById('btnfunka').style.display ='none'
     } else {
         alert('contraseña o nombre incorrecto safa de aca')
     }
 }
 
-
-let logi = false
-
-function login(){
-    document.getElementById('btnprueba').style.display = 'none';
-    document.getElementById('btnprueba2').style.display = 'block';
-    logi = "true"
-    
-
-    if (logi == "true") {
-        console.log ("true")
-        document.getElementById('btnperfil').style.display = 'block'
-    } else {
-        document.getElementById('btnperfil').style.display = 'none'
-        console.log ("false")
-    
-    }
-}
