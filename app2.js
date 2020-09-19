@@ -28,3 +28,12 @@ function sub(event) {
     }
 }
 
+function showprofile() {
+    if (document.getElementById('profile').style.display == 'flex') {
+        document.getElementById('profile').style.display = 'none'
+    }
+    else {
+        document.getElementById('profile').style.display = 'flex'
+    }
+
+}

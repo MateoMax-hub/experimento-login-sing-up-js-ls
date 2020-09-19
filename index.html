@@ -16,19 +16,28 @@
 <body>
 
     <ul class="nav d-flex justify-content-between bg-dark text-white h-30">
-        <li class="align-self-start">
-            link 1 prueba
-        </li>
-        <li>
-            <button onclick="showlog()" class="text-white bg-dark " id="btnfunka">funka pls
-
+        <div class="d-flex">
+            <li class="border">
+                link 1 del nav
+            </li>
+            <li class="border">
+                link 2 del nav
+            </li>
+        </div>
+        <div>
+            <li>
+                <button onclick="showlog()" class="text-white bg-dark dis-none" id="btnfunka">funka pls
+                    
+                </button>
+            </li>
+            <button onclick="showprofile()" class="dis-none dis-none1 h-30 bg-dark text-white" id="btnperfil">perfil
             </button>
-        </li>
+        </div>
     </ul>
 
 
     <div class="dis-none1 justify-content-end" id="formlog">
-        <div class="bg-dark text-white w-10 d-flex justify-content-end">
+        <div class="bg-dark text-white w-20 d-flex justify-content-end">
             <form name="form" action="" method="get">
                 <h1>nombre</h1>
                 <input type="text" name="nombre">
@@ -38,9 +47,26 @@
             </form>
         </div>
     </div>
-    <button class="dis-none" id="btnperfil">
-        <h4>perfil</h4>
-    </button>
+
+    <div class="dis-none1 justify-content-end text-white" id="profile">
+        <ul class=" w-10 bg-dark nodeco">
+            <li class="prox">
+                proximamente
+            </li>
+            <li class="prox">
+                proximamente
+            </li>
+            <li class="prox">
+                proximamente
+            </li>
+            <li class="prox">
+                proximamente
+            </li>
+            <li class="prox">
+                proximamente
+            </li>
+        </ul>
+    </div>
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
