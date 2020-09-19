@@ -1,18 +1,9 @@
-.prueba123 {
-    width: 100px;
-    height: 100px;
-    background-color: red;
-    display: block;
-}
-.prueba1234 {
-    width: 100px;
-    height: 100px;
-    background-color: rgb(0, 0, 0);
-    display: none;
-}
+
 .dis-none {
     display: none;
-    width: 50px;
-    height: 50px;
-    background-color: blue;
+    width: 75px;
+    height: 35px;
+    background-color: rgb(38, 38, 39);
+    border: 1px solid grey;
+    color: white;
 }
