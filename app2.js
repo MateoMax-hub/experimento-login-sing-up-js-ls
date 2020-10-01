@@ -6,7 +6,18 @@ function showlog() {
         document.getElementById('formlog').style.display = 'none'
     }
     else {
+        document.getElementById('formsing').style.display = 'none'
         document.getElementById('formlog').style.display = 'flex'
+    }
+}
+
+function showregister() { 
+    if (document.getElementById('formsing').style.display == 'flex') {
+        document.getElementById('formsing').style.display = 'none'
+    }
+    else {
+        document.getElementById('formlog').style.display = 'none'
+        document.getElementById('formsing').style.display = 'flex'
     }
 }
 

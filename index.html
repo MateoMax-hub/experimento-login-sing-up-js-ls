@@ -24,10 +24,15 @@
                 link 2 del nav
             </li>
         </div>
-        <div>
+        <div class="d-flex">
+            <li class="mr-4">
+                <button onclick="showregister()" class="text-white bg-dark dis-none" id="btnregister">
+                    sing in
+                </button>
+            </li>
             <li>
-                <button onclick="showlog()" class="text-white bg-dark dis-none" id="btnfunka">log in
-                    
+                <button onclick="showlog()" class="text-white bg-dark dis-none" id="btnfunka">
+                    log in
                 </button>
             </li>
             <button onclick="showprofile()" class="dis-none dis-none1 h-30 bg-dark text-white" id="btnperfil">perfil
@@ -36,6 +41,18 @@
     </ul>
 
 
+    <div class="dis-none1 justify-content-end" id="formsing">
+        <div class="bg-dark text-white w-20 d-flex justify-content-end">
+            <form name="form" action="" method="get">
+                <h4>nombre</h1>
+                <input type="text" name="nombre">
+                <h4>contraseña</h2>
+                <input type="password" name="contra">
+                <button onclick="sub(event)" id="">sing in</button>
+            </form>
+        </div>
+    </div>
+
     <div class="dis-none1 justify-content-end" id="formlog">
         <div class="bg-dark text-white w-20 d-flex justify-content-end">
             <form name="form" action="" method="get">
@@ -43,7 +60,7 @@
                 <input type="text" name="nombre">
                 <h4>contraseña</h2>
                 <input type="password" name="contra">
-                <button onclick="sub(event)" id="">Prueba</button>
+                <button onclick="sub(event)" id="">login</button>
             </form>
         </div>
     </div>
