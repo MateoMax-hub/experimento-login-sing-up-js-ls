@@ -1,0 +1,8 @@
+1 crear keys nuevas con cada subRegister y ponerlas
+ con los datos de nombreSingIn y contraSingIn
+
+ 2 que todas esas keys se agregen automaticamente cuando
+ se creen, como condicion para la function de log in 
+
+ 3 que los datos se guarden en el json para que queden
+ aunque refresque la pagina
