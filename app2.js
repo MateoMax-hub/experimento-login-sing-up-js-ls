@@ -11,6 +11,7 @@ function subRegister(event) {
 
     let keyN = "nombre"
 
+
     // JSON.stringify({ userName: 'nombreSingIn', userPassword: 'contraSingIn'})
     localStorage.setItem( keyN, nombreSingIn)
     localStorage.setItem("contraseña", contraSingIn)
