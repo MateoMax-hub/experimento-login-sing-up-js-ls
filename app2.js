@@ -6,16 +6,60 @@ function subRegister(event) {
     event.preventDefault()
     
 
-    let contraSingIn = document.getElementsByName("contraSingIn")[0].value
-    let nombreSingIn = document.getElementsByName("nombreSingIn")[0].value
+    
+    if (localStorage.getItem("nombre1") === "" || localStorage.getItem("nombre1") === null ) {
+        let nombreSingIn = document.getElementsByName("nombreSingIn")[0].value
+        localStorage.setItem("nombre1", nombreSingIn)
+    } else {
+        if (localStorage.getItem("nombre2") === "" || localStorage.getItem("nombre2") === null) {
+            let nombreSingIn = document.getElementsByName("nombreSingIn")[0].value
+            localStorage.setItem("nombre2", nombreSingIn)
+        } else {
+            if (localStorage.getItem("nombre3") === "" || localStorage.getItem("nombre3") === null) {
+                let nombreSingIn = document.getElementsByName("nombreSingIn")[0].value
+                localStorage.setItem("nombre3", nombreSingIn)
+            } else {
+                if (localStorage.getItem("nombre4") === "" || localStorage.getItem("nombre4") === null) {
+                    let nombreSingIn = document.getElementsByName("nombreSingIn")[0].value
+                    localStorage.setItem("nombre4", nombreSingIn)
+                } else {
+                    if (localStorage.getItem("nombre5") === "" || localStorage.getItem("nombre5") === null) {
+                        let nombreSingIn = document.getElementsByName("nombreSingIn")[0].value
+                        localStorage.setItem("nombre5", nombreSingIn)
+                    } else {
+                        alert ("se agotaron el numero de cuentas posibles :C")
+                    }
+                }
+            }
+        }
+    }
 
-    let keyN = "nombre"
-
-
-    // JSON.stringify({ userName: 'nombreSingIn', userPassword: 'contraSingIn'})
-    localStorage.setItem( keyN, nombreSingIn)
-    localStorage.setItem("contraseña", contraSingIn)
-
+    if (localStorage.getItem("contraseña1") === "" || localStorage.getItem("contraseña1") === null ) {
+        let contraSingIn = document.getElementsByName("contraSingIn")[0].value
+        localStorage.setItem("contraseña1", contraSingIn)
+    } else {
+        if (localStorage.getItem("contraseña2") === "" || localStorage.getItem("contraseña2") === null) {
+            let contraSingIn = document.getElementsByName("contraSingIn")[0].value
+            localStorage.setItem("contraseña2", contraSingIn)
+        } else {
+            if (localStorage.getItem("contraseña3") === "" || localStorage.getItem("contraseña3") === null) {
+                let contraSingIn = document.getElementsByName("contraSingIn")[0].value
+                localStorage.setItem("contraseña3", contraSingIn)
+            } else {
+                if (localStorage.getItem("contraseña4") === "" || localStorage.getItem("contraseña4") === null) {
+                    let contraSingIn = document.getElementsByName("contraSingIn")[0].value
+                    localStorage.setItem("contraseña4", contraSingIn)
+                } else {
+                    if (localStorage.getItem("contraseña5") === "" || localStorage.getItem("contraseña5") === null) {
+                        let contraSingIn = document.getElementsByName("contraSingIn")[0].value
+                        localStorage.setItem("contraseña5", contraSingIn)
+                    } else {
+                        alert ("se agotaron el numero de cuentas posibles :C")
+                    }
+                }
+            }
+        }
+    }
 }
 
 
@@ -48,7 +92,7 @@ function sub(event) {
     userNameInStorage = localStorage.getItem("nombre")
     userPasswordInStorage = localStorage.getItem("contraseña")
 
-    if (nombre == userNameInStorage && contra == userPasswordInStorage) {
+    if ((localStorage.getItem("nombre1") )) {
         document.getElementById('formlog').style.display = 'none';
         document.getElementById('btnperfil').style.display = 'block';
         console.log ("regato")
