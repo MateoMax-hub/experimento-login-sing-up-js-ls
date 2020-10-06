@@ -26,12 +26,12 @@
         </div>
         <div class="d-flex">
             <li class="mr-4">
-                <button onclick="showregister()" class="text-white bg-dark dis-none" id="btnregister">
-                    sing in
+                <button onclick="showregister()" class="text-white bg-dark dis-none" id="btnSignUp">
+                    sing up
                 </button>
             </li>
             <li>
-                <button onclick="showlog()" class="text-white bg-dark dis-none" id="btnfunka">
+                <button onclick="showlog()" class="text-white bg-dark dis-none" id="btnLogIn">
                     log in
                 </button>
             </li>
@@ -41,26 +41,26 @@
     </ul>
 
 
-    <div class="dis-none1 justify-content-end" id="formsing">
+    <div class="dis-none1 justify-content-end" id="formSignUp">
         <div class="bg-dark text-white w-20 d-flex justify-content-end">
             <form name="form" action="" method="get">
                 <h4>nombre</h1>
-                <input type="text" name="nombreSingIn">
+                <input type="text" name="nombreSignUp">
                 <h4>contraseña</h2>
-                <input type="password" name="contraSingIn">
-                <button onclick="subRegister(event)">sing in</button>
+                <input type="password" name="contraSignUp">
+                <button onclick="subSignUp(event)">sing up</button>
             </form>
         </div>
     </div>
 
-    <div class="dis-none1 justify-content-end" id="formlog">
+    <div class="dis-none1 justify-content-end" id="formLogIn">
         <div class="bg-dark text-white w-20 d-flex justify-content-end">
             <form name="form" action="" method="get">
                 <h4>nombre</h1>
                 <input type="text" name="nombre">
                 <h4>contraseña</h2>
                 <input type="password" name="contra">
-                <button onclick="sub(event)">login</button>
+                <button onclick="subLogIn(event)">log in</button>
             </form>
         </div>
     </div>
@@ -80,7 +80,7 @@
                 proximamente
             </li>
             <li class="prox">
-                <button class=" bg-dark text-white w-100 h-100" id="endsesion" onclick="endlog()">
+                <button class=" bg-dark text-white w-100 h-100" id="endsesion" onclick="endLogIn()">
                     cerrar sesion
                 </button>
             </li>
