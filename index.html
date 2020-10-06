@@ -26,6 +26,9 @@
         </div>
         <div class="d-flex">
             <li class="mr-4">
+                <button onclick="makeid()" class="text-white bg-dark dis-none" id="-">
+                    pruebaRandomKey
+                </button>
                 <button onclick="showregister()" class="text-white bg-dark dis-none" id="btnSignUp">
                     sing up
                 </button>
@@ -57,9 +60,9 @@
         <div class="bg-dark text-white w-20 d-flex justify-content-end">
             <form name="form" action="" method="get">
                 <h4>nombre</h1>
-                <input type="text" name="nombre">
+                <input type="text" name="nombreLogIn">
                 <h4>contraseña</h2>
-                <input type="password" name="contra">
+                <input type="password" name="contraLogIn">
                 <button onclick="subLogIn(event)">log in</button>
             </form>
         </div>
@@ -99,6 +102,7 @@
         crossorigin="anonymous"></script>
     <!-- <script src="app.js"></script> -->
     <script src="app2.js"></script>
+    <script src="randomKey.js"></script>
 </body>
 
 </html>
