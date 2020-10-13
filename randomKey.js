@@ -19,6 +19,9 @@ function subSignUp(event) {
 
     let key = text
     localStorage.setItem(key,[nombreSignUp,contraSignUp])
+    document.getElementById('formSignUp').style.display = 'none';
+
+    
 }
 
 
